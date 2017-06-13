@@ -1,5 +1,5 @@
 # SiX ROM #
-[<center><img src="https://lh3.googleusercontent.com/-Rm8-kc-QUl8/WRs1h_QWlOI/AAAAAAABZNk/Zg5HQvh8ojsY_vHJsLyrs4tSL8nmH10TwCJoC/w530-h335-p-rw/Untitled9966op.png" height="100%" width="100%;"/></center>](https://plus.google.com/u/0/communities/108198916369516028494)
+[<center><img src="https://lh3.googleusercontent.com/-Rm8-kc-QUl8/WRs1h_QWlOI/AAAAAAABZNk/Zg5HQvh8ojsY_vHJsLyrs4tSL8nmH10TwCJoC/w530-h335-p-rw/Untitled9966op.png" height="60%" width="60%;"/></center>](https://plus.google.com/u/0/communities/108198916369516028494)
 
 # Getting Started
 ---------------
