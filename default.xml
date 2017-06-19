@@ -9,6 +9,8 @@
            review="android-review.googlesource.com" />
   <remote name="sixrom"
            fetch="https://github.com/SiXROM/" />
+  <remote name="sosrom"
+           fetch="https://github.com/SoS-ROM/" />
   <remote name="pure"
            fetch="https://github.com/PureNexusProject/" />
   <default revision="refs/tags/android-7.1.2_r17"
