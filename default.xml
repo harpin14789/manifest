@@ -8,9 +8,11 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
   <remote name="sixrom"
-           fetch="https://github.com/SiXROM/" />
+           fetch="https://github.com/SiX-ROM/" />
   <remote name="sosrom"
            fetch="https://github.com/SoS-ROM/" />
+  <remote name="sixdevices"
+           fetch="https://github.com/SiXROM/" />
   <remote name="pure"
            fetch="https://github.com/PureNexusProject/" />
   <default revision="refs/tags/android-7.1.2_r17"
@@ -27,10 +29,13 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="sixrom" revision="n-mr2.1" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="sixrom" revision="n-mr2.1" />
+  <project path="external/busybox" name="platform_external_busybox" remote="sixrom" revision="n-mr2.1" />
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="sixrom" revision="n-mr2.1" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="sixrom" revision="n-mr2.1" />
   <project path="frameworks/support" name="platform_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="sixrom" revision="n-mr2.1" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="sixrom" revision="n-mr2.1" />
+  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="sixrom" revision="n-mr2.1" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="sixrom" revision="n-mr2.1" />
   <project path="packages/apps/SixSettings" name="platform_packages_apps_SiXSettings" remote="sixrom" revision="n-mr2.1" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="sixrom" revision="n-mr2.1" />
@@ -61,29 +66,24 @@
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="sixrom" revision="n-mr2.1" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="sixrom" revision="n-mr2.1" />
 
-  <!-- PureNexus Repo`s -->
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="pure" revision="n-mr2" />
-  <project path="external/busybox" name="android_external_busybox" remote="pure" revision="n-mr2" />
-  <project path="system/vold" name="android_system_vold" groups="pdk" remote="pure" revision="n-mr2" />
-
   <!-- DUI Repo's -->
   <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="sixrom" revision="n-mr2.1" />
   <project path="external/DUtils" name="platform_external_DUtils" remote="sixrom" revision="n-mr2.1" />
 
   <!-- Shamu Source -->
   <project path="device/moto/shamu" name="platform_device_moto_shamu" groups="device,shamu,broadcom_pdk,generic_fs,pdk" remote="sixrom" revision="n-mr2.1" />
-  <project path="kernel/moto/shamu" name="platform_kernel_moto_shamu" groups="device,shamu,broadcom_pdk,generic_fs,pdk" remote="sosrom" revision="n-mr2.1" />
+  <project path="kernel/moto/shamu" name="platform_kernel_moto_shamu" groups="device,shamu,broadcom_pdk,generic_fs,pdk" remote="sixrom" revision="n-mr2.1" />
   <project path="vendor/moto" name="proprietary_vendor_moto" remote="sixrom" revision="n-mr2.1" />
 
   <!-- Angler Source -->
   <project path="device/huawei/angler" name="platform_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="sixrom" revision="n-mr2.1" />
-  <project path="kernel/huawei/angler" name="platform_kernel_huawei_angler" groups="device,angler,broadcom_pdk,pdk" remote="sosrom" revision="n-mr2.1" />
+  <project path="kernel/huawei/angler" name="platform_kernel_huawei_angler" groups="device,angler,broadcom_pdk,pdk" remote="sixrom" revision="n-mr2.1" />
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="sixrom" revision="n-mr2.1" />
 
   <!-- Bullhead Source -->
   <project path="device/lge/bullhead" name="platform_device_lge_bullhead" groups="device,bullhead" remote="sixrom" revision="n-mr2.1" />
-  <project path="kernel/lge/bullhead" name="android_kernel_lge_bullhead" groups="device,bullhead,pdk" remote="pure" revision="n-mr2" />
-  <project path="vendor/lge" name="proprietary_vendor_lge" remote="pure" revision="n-mr2" />
+  <project path="kernel/lge/bullhead" name="platform_kernel_lge_bullhead" groups="device,bullhead,pdk" remote="sixrom" revision="n-mr2.1" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="sixrom" revision="n-mr2.1" />
 
   <!-- Google AOSP Repo's -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
