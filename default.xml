@@ -11,7 +11,7 @@
            fetch="https://github.com/SiX-ROM/" />
   <remote name="sosrom"
            fetch="https://github.com/SoS-ROM/" />
-  <remote name="sixdevices"
+  <remote name="sixref"
            fetch="https://github.com/SiXROM/" />
   <remote name="pure"
            fetch="https://github.com/PureNexusProject/" />
@@ -84,6 +84,9 @@
   <project path="device/lge/bullhead" name="platform_device_lge_bullhead" groups="device,bullhead" remote="sixrom" revision="n-mr2.1" />
   <project path="kernel/lge/bullhead" name="platform_kernel_lge_bullhead" groups="device,bullhead,pdk" remote="sixrom" revision="n-mr2.1" />
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="sixrom" revision="n-mr2.1" />
+
+  <!-- Tools Source -->
+  <project path="prebuilts/ninja/linux-x86" name="platform_prebuilts_ninja_linux-x86" remote="sixref" revision="n-mr2.1" />
 
   <!-- Google AOSP Repo's -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
@@ -493,7 +496,6 @@
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
   <project path="prebuilts/ninja/darwin-x86" name="platform/prebuilts/ninja/darwin-x86" groups="darwin,pdk,tradefed" />
-  <project path="prebuilts/ninja/linux-x86" name="platform/prebuilts/ninja/linux-x86" groups="linux,pdk,tradefed" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs,pdk-fs" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
