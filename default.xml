@@ -7,6 +7,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
+  <remote name="bb"
+          fetch="https://bitbucket.org/" />
   <remote name="sixrom"
            fetch="https://github.com/SiX-ROM/" />
   <remote name="sosrom"
@@ -87,6 +89,7 @@
 
   <!-- Tools Source -->
   <project path="prebuilts/ninja/linux-x86" name="platform_prebuilts_ninja_linux-x86" remote="sixref" revision="n-mr2.1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.x" name="matthewdalex/arm-eabi-6.x" remote="bb" revision="master" />
 
   <!-- Google AOSP Repo's -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
