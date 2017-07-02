@@ -42,7 +42,7 @@
   <project path="packages/apps/SixSettings" name="platform_packages_apps_SiXSettings" remote="sixrom" revision="n-mr2.1" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="sixrom" revision="n-mr2.1" />
   <project path="packages/apps/SixOTA" name="platform_packages_apps_SiXOTA" remote="sixrom" revision="n-mr2.1" />
-  <project path="packages/apps/ThemeInterfacer" name="platform_packages_apps_ThemeInterfacer" remote="sixrom" revision="n-mr2.1" />
+  <project path="packages/services/ThemeInterfacer" name="platform_packages_apps_ThemeInterfacer" remote="sixrom" revision="n-mr2.1" />
   <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="sixrom" revision="n-mr2.1" />
   <project path="vendor/pure" name="platform_vendor_six" remote="sixrom" revision="n-mr2.1" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="sixrom" revision="n-mr2.1" />
