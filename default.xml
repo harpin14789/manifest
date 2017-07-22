@@ -7,8 +7,12 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
+  <remote name="mar"
+          fetch="https://github.com/RMarchetto96/" />
   <remote name="bb"
           fetch="https://bitbucket.org/" />
+  <remote name="Black"
+          fetch="https://github.com/B14CKB1RD-Kernel/" />
   <remote name="sixrom"
            fetch="https://github.com/SiX-ROM/" />
   <remote name="sosrom"
@@ -77,18 +81,10 @@
   <project path="kernel/moto/shamu" name="platform_kernel_B14CKB1RDSiX" groups="device,shamu,broadcom_pdk,generic_fs,pdk" remote="sixrom" revision="n-mr2.1" />
   <project path="vendor/moto" name="proprietary_vendor_moto" remote="sixrom" revision="n-mr2.1" />
 
-  <!-- Angler Source -->
-  <project path="device/huawei/angler" name="platform_device_huawei_angler" groups="device,angler,broadcom_pdk" remote="sixrom" revision="n-mr2.1" />
-  <project path="kernel/huawei/angler" name="platform_kernel_huawei_angler" groups="device,angler,broadcom_pdk,pdk" remote="sixrom" revision="n-mr2.1" />
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="sixrom" revision="n-mr2.1" />
-
-  <!-- Bullhead Source -->
-  <project path="device/lge/bullhead" name="platform_device_lge_bullhead" groups="device,bullhead" remote="sixrom" revision="n-mr2.1" />
-  <project path="kernel/lge/bullhead" name="platform_kernel_lge_bullhead" groups="device,bullhead,pdk" remote="sixrom" revision="n-mr2.1" />
-  <project path="vendor/lge" name="proprietary_vendor_lge" remote="sixrom" revision="n-mr2.1" />
-
   <!-- oneplus3 Source -->
-  <
+  <project path="device/oneplus/oneplus3" name="android_device_oneplus_oneplus3" remote="mar" revision="aex" />
+  <project path="kernel/oneplus/oneplus3" name="B14CKB1RD_Kernel_OnePlus3_Unified" remote="Black" revision="n7.1" />
+  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="mar" revision="aex" />
   
   <!-- Tools Source -->
   <project path="prebuilts/ninja/linux-x86" name="platform_prebuilts_ninja_linux-x86" remote="sixref" revision="n-mr2.1" />
