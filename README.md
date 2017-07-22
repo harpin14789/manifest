@@ -9,7 +9,7 @@ To build SiX from source, you'll need to be familiar with
 
 To initialize your local repository, use this command:
 
-	repo init -u https://github.com/SiX-ROM/manifest.git -b n-mr2.1
+	repo init -u https://github.com/harpin14789/manifest.git -b n-mr2.1
 
 Then to sync source, use this command:
 
