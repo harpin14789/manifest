@@ -87,6 +87,9 @@
   <project path="kernel/lge/bullhead" name="platform_kernel_lge_bullhead" groups="device,bullhead,pdk" remote="sixrom" revision="n-mr2.1" />
   <project path="vendor/lge" name="proprietary_vendor_lge" remote="sixrom" revision="n-mr2.1" />
 
+  <!-- oneplus3 Source -->
+  <
+  
   <!-- Tools Source -->
   <project path="prebuilts/ninja/linux-x86" name="platform_prebuilts_ninja_linux-x86" remote="sixref" revision="n-mr2.1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.x" name="matthewdalex/arm-eabi-6.x" remote="bb" revision="master" />
